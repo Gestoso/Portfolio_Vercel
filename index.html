@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="shortcut icon" href="/files/Albert2.png" type="image/x-icon">
+    <link rel="stylesheet" href="build/style.css">
+    <link rel="stylesheet" href="build/style_svg.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/dogica" type="text/css" />
+    <script type="module" src="build/gsap.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/f1f14b5e7c.js" crossorigin="anonymous"></script>
+    <style>
+        h1 {
+            color: aliceblue;
+            font-size: 1rem;
+            line-height: 150%;
+            background-color: #21282a;
+        }
+        body {
+            background-color: #21282a;
+            place-content: center;
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+<body style="overflow: hidden;">
+    <script type="module" src="build/main.js"></script>
+    <div id="sec1">
+        <h2 id="nom" class="nom si"><a id="hide" href="build/aboutme.html">A</a>
+            <div class="hide">About me</div>
+            lbert <a id="rs">.</a>
+            <div class="rs" id="rs">
+                <a class="icon" href="https://github.com/Gestoso/Portfolio"><i class="fa-brands fa-linkedin fa-5x"></i></a>
+                <a class="icon" href="https://github.com/Gestoso/Portfolio"><i class="fa-brands fa-square-github fa-5x"></i></a>
+             </div>
+            <a id="hide3" href="build/contact.html">G</a>
+            <div class="hide3">Get in touch</div>e
+<a id="hide4" href="build/skills.html">s</a><div class="hide4">Skills</div>
+toso</h2>
+    </div>
+    <script>
+        gsap.from(".nom", {
+            scale: 0.5,
+            opacity: 0,
+            duration: 3,
+            stagger: 0.2
+        });
+    </script>
+    <script type="text/javascript">
+        setInterval(checkResolution, 1000);
+        setInterval(recheck, 1000);
+        let comprobado = true;
+        function checkResolution() {
+            let screenWidth = window.innerWidth;
+            let screenHeight = window.innerHeight;
+            if (screenWidth <= 1024 || screenHeight <= 659) {
+                document.body.innerHTML = "<h1 >It is not possible to view this website because the resolution of your device is too low to ensure a good experience on this website.</h1>";
+                comprobado= false;
+            } else if ((screenWidth >= 1024 || screenHeight >= 659) && !comprobado) {
+    window.location.href = "index.html"
+}
+        
+        }
+function recheck() {
+    let screenWidth = window.innerWidth;
+            let screenHeight = window.innerHeight;
+    
+}
+    </script>
+</body>
+</html>

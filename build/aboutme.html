@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="aboutme.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/fira-code" type="text/css"/>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/dogica" type="text/css" />
+    <script type="module" src="gsap.js"></script>
+    <script type="module" src="common.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <title>About me</title>
+    <style>
+        h2 {
+            color: aliceblue;
+            font-size: 1rem;
+            line-height: 150%;
+            background-color: #21282a;
+        }
+        
+        body {
+            background-color: #21282a;
+            place-content: center;
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <button id="return" style="margin-right: 85%;" class="button-36">Return</button>
+
+    <h2>
+       <<span class="cuerpo">body></span>
+       <br>
+       <br>
+        <div class="linea1">
+       <span style="color: white;"><</span><span id="linea1" class="linea1">I am Albert Gestoso, a 20-year-old web developer from Spain. I completed my higher degree in web development and actually I manage game private servers such as Ark and Minecraft. Currently, I am managing Wordpress websites for clients while also working on multiple individual projects.</span><span style="color: white;">/></span> 
+       </div>
+       <br> 
+    
+<div class="linea2">       
+    <span style="color: white;"><</span><span>This portfolio was created using HTML, CSS, and basic JavaScript. Additionally, I utilized various JavaScript libraries, such as Three.js and GSAP. Three.js is a library that provides a simple and efficient way to create 3D scenes in a web browser. With Three.js, developers can create complex 3D models, animations, and visual effects, and easily integrate them into web applications.</span><span style="color: white;">/></span>
+</div>
+<br>
+<div class="linea3">
+    <span style="color: white;"><</span><span>On the other hand, GSAP (GreenSock Animation Platform) is a powerful animation library that enables developers to create smooth and engaging animations in a web browser. With its intuitive API, GSAP allows developers to create advanced animations, including timeline-based animations, morphing, and even physics-based animations.</span><span style="color: white;">/></span>
+</div>
+<br>
+<div class="linea4">
+<span style="color: white;"><</span><span>By leveraging these technologies, I was able to create a visually engaging and dynamic portfolio. The combination of HTML, CSS, and JavaScript provided the foundation for the structure and design of the portfolio, while Three.js and GSAP added the sophisticated 3D and animation effects. These technologies allowed me to create a unique and immersive experience for the user.</span><span style="color: white;">/></span>
+</div>
+<br>
+<<span class="cuerpo" >/body></span>
+
+       </h2>
+
+       <script>
+        gsap.from(".linea1", {
+            scale: 1,
+            opacity: 0,
+            duration: 5,
+            stagger: 0.5
+        });
+        gsap.from(".linea2", {
+            scale: 1,
+            opacity: 0,
+            duration: 5,
+            stagger: 0.5,
+            delay: 2
+        });
+        gsap.from(".linea3", {
+            scale: 1,
+            opacity: 0,
+            duration: 5,
+            stagger: 0.5,
+            delay: 3
+        });
+        gsap.from(".linea4", {
+            scale: 1,
+            opacity: 0,
+            duration: 5,
+            stagger: 0.5,
+            delay: 4
+        });
+       </script>
+
+</body>
+</html>

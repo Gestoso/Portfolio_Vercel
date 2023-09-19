@@ -1,0 +1,185 @@
+.bg {
+    fill: none;
+    stroke-width: 10px;
+    stroke: #1A2C34;
+}
+
+svg {
+    width: 114px;
+    height: 114px;
+    margin: 1em;
+}
+
+.svg-text {
+    font-family: 'DogicaRegular';
+    /* font-size: 18px; */
+    text-anchor: middle;
+}
+
+[class^="meter-"] {
+    fill: none;
+    stroke-width: 10px;
+    stroke-linecap: round;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+}
+
+.angular {
+    stroke: rgb(255, 255, 255);
+    stroke-dasharray: 360;
+    stroke-dashoffset: 180;
+    animation: progress-angular 2s ease-out;
+}
+
+@keyframes progress-angular {
+    from {
+        stroke-dashoffset: 360;
+    }
+    to {
+        stroke-dashoffset: 180;
+    }
+}
+
+.laravel {
+    stroke: #ff2d20;
+    stroke-dasharray: 360;
+    stroke-dashoffset: 180;
+    animation: progress-laravel 2s ease-out;
+}
+
+@keyframes progress-laravel {
+    from {
+        stroke-dashoffset: 360;
+    }
+    to {
+        stroke-dashoffset: 180;
+    }
+}
+
+.mysql {
+    stroke: #e38e24;
+    stroke-dasharray: 360;
+    stroke-dashoffset: 200;
+    animation: progress-mysql 2s ease-out;
+}
+
+@keyframes progress-mysql {
+    from {
+        stroke-dashoffset: 360;
+    }
+    to {
+        stroke-dashoffset: 200;
+    }
+}
+
+.wp {
+    stroke: #21759b;
+    stroke-dasharray: 360;
+    stroke-dashoffset: 90;
+    animation: progress-wp 2s ease-out;
+}
+
+@keyframes progress-wp {
+    from {
+        stroke-dashoffset: 360;
+    }
+    to {
+        stroke-dashoffset: 90;
+    }
+}
+
+.unity {
+    stroke: #dedede;
+    stroke-dasharray: 360;
+    stroke-dashoffset: 290;
+    animation: progress-unity 2s ease-out;
+}
+
+@keyframes progress-unity {
+    from {
+        stroke-dashoffset: 360;
+    }
+    to {
+        stroke-dashoffset: 290;
+    }
+}
+
+.java {
+    stroke: #0d6eb6;
+    stroke-dasharray: 360;
+    stroke-dashoffset: 180;
+    animation: progress-java 2s ease-out;
+}
+
+@keyframes progress-java {
+    from {
+        stroke-dashoffset: 360;
+    }
+    to {
+        stroke-dashoffset: 180;
+    }
+}
+
+.html {
+    stroke: #e44d26;
+    stroke-dasharray: 360;
+    stroke-dashoffset: 90;
+    animation: progress-html 2s ease-out;
+}
+
+@keyframes progress-html {
+    from {
+        stroke-dashoffset: 360;
+    }
+    to {
+        stroke-dashoffset: 90;
+    }
+}
+
+.css {
+    stroke: #264de4;
+    stroke-dasharray: 360;
+    stroke-dashoffset: 110;
+    animation: progress-css 2s ease-out;
+}
+
+@keyframes progress-css {
+    from {
+        stroke-dashoffset: 360;
+    }
+    to {
+        stroke-dashoffset: 110;
+    }
+}
+
+.js {
+    stroke: #e4a126;
+    stroke-dasharray: 360;
+    stroke-dashoffset: 200;
+    animation: progress-js 2s ease-out;
+}
+
+@keyframes progress-js {
+    from {
+        stroke-dashoffset: 360;
+    }
+    to {
+        stroke-dashoffset: 200;
+    }
+}
+
+.three {
+    stroke: rgb(255, 255, 255);
+    stroke-dasharray: 360;
+    stroke-dashoffset: 100;
+    animation: progress-three 2s ease-out;
+}
+
+@keyframes progress-three {
+    from {
+        stroke-dashoffset: 360;
+    }
+    to {
+        stroke-dashoffset: 100;
+    }
+}

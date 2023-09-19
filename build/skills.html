@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_svg.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/dogica" type="text/css" />
+    <link rel="shortcut icon" href="/files/Albert2.png" type="image/x-icon">
+    <script type="module" src="gsap.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <script type="module" src="skills.js"></script>
+    <script type="module" src="common.js"></script>
+    <title>Skills</title>
+</head>
+
+<body>
+
+    <div id="segundodiv">
+        <div class="columna">
+        <button id="return"   class="button-36">Return</button>
+            <br>
+            <br>
+            <svg>                        
+                <circle class="bg" cx="57" cy="57" r="52" >    
+                </circle>
+                <circle class="meter-2 angular" cx="57" cy="57" r="52">
+                </circle>
+                <image x="32" y="32" width="50" height="50" xlink:href="/files/angular.png" />
+                </svg>
+            <svg>
+                <circle class="bg" cx="57" cy="57" r="52" />
+                <circle class="meter-2 laravel" cx="57" cy="57" r="52" />
+                <image x="32" y="32" width="50" height="50" xlink:href="/files/laravel.png" />
+                </svg>
+            <svg>
+                <circle class="bg" cx="57" cy="57" r="52" />
+                <circle class="meter-2 mysql" cx="57" cy="57" r="52" />
+                <image x="28" y="28" width="60" height="60" xlink:href="/files/mysql.png" />
+                </svg>
+            <svg>
+                <circle class="bg" cx="57" cy="57" r="52" />
+                <circle class="meter-2 wp" cx="57" cy="57" r="52" />
+                <image x="32" y="32" width="50" height="50" xlink:href="/files/wp.png" />                    
+                </svg>
+            <svg>
+                <circle class="bg" cx="57" cy="57" r="52" />
+                <circle class="meter-2 java" cx="57" cy="57" r="52" />
+                <image x="4" y="4" width="110" height="110" xlink:href="/files/java.png" />                      </svg>
+            <svg>
+                <circle class="bg" cx="57" cy="57" r="52" />
+                <circle class="meter-2 html" cx="57" cy="57" r="52" />
+                <image x="28" y="28" width="60" height="60" xlink:href="/files/html.png" />                      </svg>
+            <svg>
+                <circle class="bg" cx="57" cy="57" r="52" />
+                <circle class="meter-2 css" cx="57" cy="57" r="52" />
+                <image x="28" y="28" width="60" height="60" xlink:href="/files/css.png" />                      </svg>
+            <svg>
+                <circle class="bg" cx="57" cy="57" r="52" />
+                <circle class="meter-2 js" cx="57" cy="57" r="52" />
+                <image x="4" y="4" width="110" height="110" xlink:href="/files/js.png" />                      </svg>
+            <svg>
+                <circle class="bg" cx="57" cy="57" r="52" />
+                <circle class="meter-2 three" cx="57" cy="57" r="52" />
+                <image x="16" y="16" width="90" height="90" xlink:href="/files/three.png" />                      </svg>
+        </div>
+        <div class="container">
+            <div class="three" id="esc">
+                <script type="module" src="./skills.js"></script>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        setInterval(checkResolution, 1000);
+        setInterval(recheck, 1000);
+        let comprobado = true;
+
+        function checkResolution() {
+            let screenWidth = window.innerWidth;
+            let screenHeight = window.innerHeight;
+
+            if (screenWidth <= 1024 || screenHeight <= 659) {
+                document.body.innerHTML = "<h1 >It is not possible to view this website because the resolution of your device is too low to ensure a good experience on this website.</h1>";
+                comprobado= false;
+                
+            } }
+
+function recheck() {
+    let screenWidth = window.innerWidth;
+            let screenHeight = window.innerHeight;
+    if ((screenWidth >= 1024 || screenHeight >= 659) && !comprobado) {
+
+    window.location.href = "skills.html"
+
+}
+}
+            
+        
+    </script>
+</body>
+
+</html>
