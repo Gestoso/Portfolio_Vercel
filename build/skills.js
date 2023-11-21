@@ -92,7 +92,7 @@ function loadGLTF(path, scene, x, y, z) {
     });
 }
 
-const angulari = loadGLTF("../models/gltf/Angular.glb", scene, 20, 158, -80);
+const angulari = loadGLTF("../models/gltf/angular.glb", scene, 20, 158, -80);
 const laraveli = loadGLTF("../models/gltf/laravel.glb", scene, 20, 95, -80);
 const javai = loadGLTF("../models/gltf/java.glb", scene, 366, 158, -80);
 const MySQLi = loadGLTF("../models/gltf/mysql.glb", scene, 20, 35, -80);
