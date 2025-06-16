@@ -37,33 +37,6 @@
         <script src="contact.js"></script>
 
     </div>
-    <script type="text/javascript">
-        setInterval(checkResolution, 1000);
-        setInterval(recheck, 1000);
-        let comprobado = true;
-
-        function checkResolution() {
-            let screenWidth = window.innerWidth;
-            let screenHeight = window.innerHeight;
-
-            if (screenWidth <= 1024 || screenHeight <= 659) {
-                document.body.innerHTML = "<h1 >It is not possible to view this website because the resolution of your device is too low to ensure a good experience on this website.</h1>";
-                comprobado= false;
-                
-            } }
-
-function recheck() {
-    let screenWidth = window.innerWidth;
-            let screenHeight = window.innerHeight;
-    if ((screenWidth >= 1024 || screenHeight >= 659) && !comprobado) {
-
-    window.location.href = "../index.html"
-
-}
-}
-            
-        
-    </script>
 </body>
 
 </html>
