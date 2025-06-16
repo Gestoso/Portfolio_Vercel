@@ -16,6 +16,16 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
     <script src="https://kit.fontawesome.com/f1f14b5e7c.js" crossorigin="anonymous"></script>
     <style>
+        .no-scroll {
+    overflow: hidden;
+        }
+
+        @media screen and (max-width: 768px) {
+            .no-scroll {
+                overflow: auto;
+            }
+        }
+
         h1 {
             color: aliceblue;
             font-size: 1rem;
@@ -30,7 +40,7 @@
         }
     </style>
 </head>
-<body style="overflow: hidden;">
+<body class="no-scroll">
     <script type="module" src="build/main.js"></script>
     <div id="sec1">
         <h2 id="nom" class="nom si"><a id="hide" href="build/aboutme.html">A</a>
