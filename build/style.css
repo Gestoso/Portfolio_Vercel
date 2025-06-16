@@ -1,43 +1,218 @@
-@media screen and (max-width: 768px) {
-    .nom {
-        font-size: 40px;
-        flex-direction: column;
-        padding: 5%;
-        text-align: center;
-    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    .hide, .hide3, .hide4, .rs {
-        position: static;
-        display: block;
-        margin: 10px auto;
-        text-align: center;
-        font-size: 16px;
-        border-width: 2px;
-        padding: 5px;
-    }
+html {
+    scroll-behavior: smooth;
+}
 
-    .fa-brands {
-        font-size: 2.5rem;
-    }
+#sec1 {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-    #sec1 {
-        padding: 20px;
-        height: auto;
-        min-height: 100vh;
-    }
-    
-    h1 {
-        font-size: 0.9rem;
-    }
+.nom {
+    font-size: 100px;
+    font-weight: 200;
+    padding: 10%;
+    font-family: 'DogicaRegular';
+    color: #b179f8;
+    place-content: center;
+    display: flex;
+    align-items: center;
+}
 
-    .container {
-        width: 95%;
-        height: auto;
-    }
+.hide {
+    display: none;
+    border: 5px double #b4b8bf;
+    font-size: 20px;
+    margin-bottom: 10%;
+    margin-right: 73%;
+    position: absolute;
+}
 
+a:hover+div.hide {
+    display: inline-block;
+}
+
+.hide:hover {
+    display: block;
+}
+
+.rs {
+    display: none;
+    font-size: 20px;
+    position: absolute;
+    margin-top: 15%;
+    margin-right: 6%;
+    width: fit-content;
+    height: fit-content;
+    padding: 50px;
+}
+.icon {
+    color: #ffffff;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.fa-brands:hover {
+    padding: 1px;
+    color: #B179F8;
+}
+
+:hover+div.rs {
+    display: block;
+}
+
+.rs:hover {
+    display: inline-block;
+}
+
+.hide3 {
+    display: none;
+    border: 5px double #b4b8bf;
+    font-size: 20px;
+    margin-bottom: 10%;
+    margin-left: 6%;
+    position: absolute;
+}
+
+a:hover+div.hide3 {
+    display: inline-block;
+}
+
+.hide3:hover {
+    display: block;
+}
+
+.hide4 {
+    display: none;
+    border: 5px double #b4b8bf;
+    font-size: 20px;
+    margin-bottom: 10%;
+    margin-left: 28%;
+    position: absolute;
+}
+
+a:hover+div.hide4 {
+    display: inline-block;
+}
+
+.hide4:hover {
+    display: block;
+}
+
+
+
+a#hide, a#hide3, a#hide4, a#rs {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    background-image: linear-gradient(to right, #B179F8, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#divprincipal {
+    position: absolute;
+    height: 100vh;
+}
+
+#segundodiv {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-color: #21082a;
+    justify-content: center;
+    align-items: center;
+}
+
+#tercerdiv {
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    background-color: #21082a;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    margin-top: 30%;
+    color: aliceblue;
+    font-size: 50px;
+    place-content: center;
+    display: grid;
+}
+
+.arrow {
+    font-size: 100px;
+    place-content: center;
+    display: grid;
+}
+
+.espaciador-vertical {
+    height: 27%;
+    background-color: #21082a;
+    /* cambiar el valor según sea necesario */
+}
+
+.three {
+    margin-left: -25px;
+    margin-right: -25px;
+    width: calc(100% + 50px);
+    height: calc(100% + 50px);
+}
+
+.container {
+    width: 1000px;
+    height: 678px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #c5c4c4;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.columna {
+    flex: 50%;
+    width: 100%;
+}
+
+.button-36 {
+    background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-family: 'DogicaRegular';
+    font-size: 18px;
+    font-weight: 500;
+    height: 4rem;
+    padding: 30px;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    transition: all .5s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin: 20px;
+}
+
+.button-36:hover {
+    box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+    transition-duration: .1s;
+}
+
+@media (min-width: 768px) {
     .button-36 {
-        width: 90%;
-        font-size: 16px;
-        padding: 20px;
+        padding: 0 2.6rem;
     }
 }
